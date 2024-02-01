@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.container{
+    margin: 2.5rem;
+    display: flex;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.container img {
+    width: 7.5rem;
+}
+
+.entrada_texto {    
+    width: 41.5rem;
+}
+
+.input_entrada_texto{
+    background-color: #F3F5FC;
+    width: 17.5rem;
+    padding: 1rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 2rem;
+    color: #0A3871;
+    text-align: justify;
+    padding-top: 3.12rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+
+}
+
+.input_entrada_texto::-webkit-input-placeholder{
+    color:#0A3871;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.saida_texto {
+    width: 25rem;
+}
+
+.botoes{
+    margin-top: 3.12rem;
+    display: flex;
+    gap: 0.7rem;
+}
+
+.input_saida_texto{
+    color:#0A3871;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: justify;
+    width: 70%;
+    border: none;
+    border-radius: 0.4rem;
+    height: 31.25rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    padding: 1rem;
+}
+
+.btn {
+    border: none;
+    padding: 1rem;
+    width: 16rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.btn_criptografar {
+    background-color:#0A3871;
+    color: #F3F5FC;
+    margin-right: 1.6rem;
+}
+
+.btn-copiar{
+    background-color:#430000;
+    color: #fff;
+    margin-right: 1.6rem;
+    display: none;
+}
+
+.btn:hover{
+    border: 2px solid pink;
+}
+
+.btn_descriptografar {
+    background-color:#D8DFE8;
+    color: #0A3871;
+}
+
+.validation{
+    margin-bottom: -1rem;
+    color: #430000;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer{
+    text-align: center;
+    background-color:#0A3871;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+@media(max-width: 1200px){
+    .container {
+        flex-direction: column;
+    }
+
+    .botoes{
+        flex-direction: column;
+    }
+
+    .validation{
+        width: 20rem;
+    }
+}

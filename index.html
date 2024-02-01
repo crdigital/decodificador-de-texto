@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificdor de Textos JS</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <main class="container">
+        <img src="assets/images/Logo.png" alt="">
+        <section class="entrada_texto">
+            <textarea class="input_entrada_texto" name="" cols="30" rows="9"  id="texto_entrada" placeholder="Digite seu texto"></textarea>
+            <br>
+            <p class="validation"> * Letras maiúsculas e caracteres especiais não serão aceitos.</p>
+            <div class="botoes">
+                <input type="button" class="btn btn_criptografar" onclick="encripta()" value="Criptografar" id="btnCriptografar" />
+                <input type="button" class="btn btn_descriptografar" onclick="desencripta()" value="Descriptografar" id="btnDescriptografar" disabled/>                    
+                <input type="button" class="btn btn-copiar" onclick="copiar()" value="Copiar Texto" id="btnCopiar" />                
+            </div>
+        </section>
+        <section class="saida_texto">
+            <textarea class="input_saida_texto" name="" cols="30" rows="10"  id="texto_saida"></textarea>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por</p>
+        <p>Clayton da Silva Rodrigues - &copy; 2024</p>
+    </footer>
+    <script src="assets/js/app.js" defer></script>
+</body>
+</html>
